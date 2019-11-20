@@ -2,13 +2,7 @@ const path = require("path");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "development",
-  //devtool: "none", // to remove "eval" in webpack minified file, so that easy to understand
   entry: "./src/index.js",
-  output: {
-    filename: "main.[contentHash].js",
-    path: path.resolve(__dirname, "dist")
-  },
   module: {
     rules: [
       // // css loader
